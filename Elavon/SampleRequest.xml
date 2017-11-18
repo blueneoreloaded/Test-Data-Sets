@@ -1,0 +1,10 @@
+xmldata=<txn>
+	<ssl_merchant_id>009005</ssl_merchant_id>
+	<ssl_user_id>hackathon</ssl_user_id>
+	<ssl_pin>U1U0BLQIGLQ0L781E4DFROL21NL2QJMFN468GQQOSOJF5KX2L3JIIKWWPG325CX3</ssl_pin>
+	<ssl_transaction_type>ccsale</ssl_transaction_type>
+	<ssl_card_number>5413330001000174</ssl_card_number>
+	<ssl_exp_date>1219</ssl_exp_date>
+	<ssl_amount>10.00</ssl_amount>
+	<ssl_first_name>Test</ssl_first_name>
+</txn>
