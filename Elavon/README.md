@@ -1,4 +1,4 @@
-# Elavon APIs
+## Elavon APIs
 
 Elavon is the merchant processing division of U.S. Bank. Elavon helps businesses, small and large, accept all payment types – and reap the benefits at the end of the day. Whether they need a simple or sophisticated payment solution, Elavon has solution for them.
 
