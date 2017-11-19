@@ -24,8 +24,9 @@ Highest-level overview of Bluemix:
 - The long version: 
  https://www.youtube.com/watch?v=gq5MvY1nNOM - 24 minutes
 
-- Getting started with Node-RED (web page):
-  https://developer.ibm.com/recipes/tutorials/getting-started-with-watson-iot-platform-using-node-red/
-
 - Introduction to using the Node-RED interface:
   https://www.youtube.com/watch?v=vYreeoCoQPI - 5 minutes
+
+  - Getting started with Node-RED (web page):
+  https://developer.ibm.com/recipes/tutorials/getting-started-with-watson-iot-platform-using-node-red/
+
