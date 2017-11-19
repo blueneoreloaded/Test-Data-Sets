@@ -21,6 +21,9 @@ The Converge API has two main versions:
 	The response message is an HTML page. For this reason, it may be more difficult to use this version as the specific values must be parsed out of the resulting HTML page.
 	-- https://api.demo.convergepay.com/VirtualMerchantDemo/process.do
 
+# Postman artifacts
+The included Postman files include samples of both Converge API calls. A separate environment file is also included.
+
 
 # Converge API request data elements
 - ssl_merchant_id: Elavon Converge ID for the merchant requesting to process this payment.
