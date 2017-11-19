@@ -1,0 +1,130 @@
+{
+	"info": {
+		"name": "Locations",
+		"_postman_id": "e3fdef4c-7025-5440-eda8-98308a181309",
+		"description": "Tests case for the U.S. Bank Location API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Location list",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer fz8yaHTNYhb6WUrEzx30zD6nwCZzcKMCVKn2AJkd"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://{{loc-endpoint}}/locations/v1/?page=0&per_page=1",
+					"protocol": "https",
+					"host": [
+						"{{loc-endpoint}}"
+					],
+					"path": [
+						"locations",
+						"v1",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0",
+							"equals": true
+						},
+						{
+							"key": "per_page",
+							"value": "1",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Locations by ID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer fz8yaHTNYhb6WUrEzx30zD6nwCZzcKMCVKn2AJkd"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://{{loc-endpoint}}/locations/v1/A-SQT27871",
+					"protocol": "https",
+					"host": [
+						"{{loc-endpoint}}"
+					],
+					"path": [
+						"locations",
+						"v1",
+						"A-SQT27871"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": " Locations by geocode",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer fz8yaHTNYhb6WUrEzx30zD6nwCZzcKMCVKn2AJkd"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://{{loc-endpoint}}/locations/v1/search?latitude=38.628827&longitude=-90.246704&page=1&per_page=2&radius=4",
+					"protocol": "https",
+					"host": [
+						"{{loc-endpoint}}"
+					],
+					"path": [
+						"locations",
+						"v1",
+						"search"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "38.628827",
+							"equals": true
+						},
+						{
+							"key": "longitude",
+							"value": "-90.246704",
+							"equals": true
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"equals": true
+						},
+						{
+							"key": "per_page",
+							"value": "2",
+							"equals": true
+						},
+						{
+							"key": "radius",
+							"value": "4",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

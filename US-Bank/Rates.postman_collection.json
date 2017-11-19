@@ -1,0 +1,299 @@
+{
+	"info": {
+		"name": "Rates",
+		"_postman_id": "51f054f3-43ce-e409-3159-78570019d1ad",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "RatesRESTCurrentDeposits",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://{{rates-endpoint}}/GetCurrentDepositRates?application=RIB&output=json&branchnumber=1&CustomerType=CONSUMER&Balance=25000&categoryid=37&LoanAmount=25000&Term=55",
+					"protocol": "https",
+					"host": [
+						"{{rates-endpoint}}"
+					],
+					"path": [
+						"GetCurrentDepositRates"
+					],
+					"query": [
+						{
+							"key": "application",
+							"value": "RIB",
+							"equals": true
+						},
+						{
+							"key": "output",
+							"value": "json",
+							"equals": true
+						},
+						{
+							"key": "branchnumber",
+							"value": "1",
+							"equals": true
+						},
+						{
+							"key": "CustomerType",
+							"value": "CONSUMER",
+							"equals": true
+						},
+						{
+							"key": "Balance",
+							"value": "25000",
+							"equals": true
+						},
+						{
+							"key": "categoryid",
+							"value": "37",
+							"equals": true
+						},
+						{
+							"key": "LoanAmount",
+							"value": "25000",
+							"equals": true
+						},
+						{
+							"key": "Term",
+							"value": "55\n",
+							"equals": true
+						}
+					]
+				},
+				"description": "Rates for current depoist accounts"
+			},
+			"response": []
+		},
+		{
+			"name": "RatesRESTCurrentCertificateofDeposit",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://{{rates-endpoint}}/GetCurrentCertificateofDepositRates?application=ICApply&output=json&ProductCode=CDA&SubProductCode=R1&BranchNumber=1&RateEffectiveDate=2017-10-05&zipcode=80130&callback=MyCallBackFunction&OpeningBalanceAmount=25000",
+					"protocol": "https",
+					"host": [
+						"{{rates-endpoint}}"
+					],
+					"path": [
+						"GetCurrentCertificateofDepositRates"
+					],
+					"query": [
+						{
+							"key": "application",
+							"value": "ICApply",
+							"equals": true
+						},
+						{
+							"key": "output",
+							"value": "json",
+							"equals": true
+						},
+						{
+							"key": "ProductCode",
+							"value": "CDA",
+							"equals": true
+						},
+						{
+							"key": "SubProductCode",
+							"value": "R1",
+							"equals": true
+						},
+						{
+							"key": "BranchNumber",
+							"value": "1",
+							"equals": true
+						},
+						{
+							"key": "RateEffectiveDate",
+							"value": "2017-10-05",
+							"equals": true
+						},
+						{
+							"key": "zipcode",
+							"value": "80130",
+							"equals": true
+						},
+						{
+							"key": "callback",
+							"value": "MyCallBackFunction",
+							"equals": true
+						},
+						{
+							"key": "OpeningBalanceAmount",
+							"value": "25000",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "RatesRESTAutoLoans",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://{{rates-endpoint}}/GetAutoLoanRates?application=RIB&output=json&zipcode=55408&loanamount=12000&loantermmonths=24",
+					"protocol": "https",
+					"host": [
+						"{{rates-endpoint}}"
+					],
+					"path": [
+						"GetAutoLoanRates"
+					],
+					"query": [
+						{
+							"key": "application",
+							"value": "RIB",
+							"equals": true
+						},
+						{
+							"key": "output",
+							"value": "json",
+							"equals": true
+						},
+						{
+							"key": "zipcode",
+							"value": "55408",
+							"equals": true
+						},
+						{
+							"key": "loanamount",
+							"value": "12000",
+							"equals": true
+						},
+						{
+							"key": "loantermmonths",
+							"value": "24",
+							"equals": true
+						}
+					]
+				},
+				"description": "Gets current rates for auto loans"
+			},
+			"response": []
+		},
+		{
+			"name": "RatesRESTHomeEquity",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://{{rates-endpoint}}/GetHomeEquityRates?application=myapp&output=json&ZipCode=80130&HomeEquityRequestedAmount=15000&MortgageBalance=215000&HomeValue=250000&MinimumLoanAmount=10000&MaximumLoanAmount=20000&MaximumLoanToValuePercent=102&RefinanceDesiredSwitch=true",
+					"protocol": "https",
+					"host": [
+						"{{rates-endpoint}}"
+					],
+					"path": [
+						"GetHomeEquityRates"
+					],
+					"query": [
+						{
+							"key": "application",
+							"value": "myapp",
+							"equals": true
+						},
+						{
+							"key": "output",
+							"value": "json",
+							"equals": true
+						},
+						{
+							"key": "ZipCode",
+							"value": "80130",
+							"equals": true
+						},
+						{
+							"key": "HomeEquityRequestedAmount",
+							"value": "15000",
+							"equals": true
+						},
+						{
+							"key": "MortgageBalance",
+							"value": "215000",
+							"equals": true
+						},
+						{
+							"key": "HomeValue",
+							"value": "250000",
+							"equals": true
+						},
+						{
+							"key": "MinimumLoanAmount",
+							"value": "10000",
+							"equals": true
+						},
+						{
+							"key": "MaximumLoanAmount",
+							"value": "20000",
+							"equals": true
+						},
+						{
+							"key": "MaximumLoanToValuePercent",
+							"value": "102",
+							"equals": true
+						},
+						{
+							"key": "RefinanceDesiredSwitch",
+							"value": "true",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "RatesRESTMortgageRates",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://{{rates-endpoint}}/GetMortgageRates?application=myapp&output=json",
+					"protocol": "https",
+					"host": [
+						"{{rates-endpoint}}"
+					],
+					"path": [
+						"GetMortgageRates"
+					],
+					"query": [
+						{
+							"key": "application",
+							"value": "myapp",
+							"equals": true
+						},
+						{
+							"key": "output",
+							"value": "json",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
