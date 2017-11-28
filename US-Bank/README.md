@@ -27,7 +27,7 @@ There are two sample client JSON files for instantiating an API call.
 # Rates-specific notes
 The U.S. Bank Rates API provides a list of the current rates for a variety of different banking products. Specific methods are described on the developer portal (https://usbinnovation.apiportal.akana.com). Parameters are passed on the query string. Most fields are optional. If certain fileds are omitted, then the results will include more options. For example, if a request for auto loan rates does not include the terms, then the results will include rates for all available terms.
 
-# Locations-specific nots
+# Locations-specific notes
 The U.S. Bank Locations API provides a list of U.S. Bank facilities such as ATMs and branches. In general, these methods require parameters to be passed on the query string.
 
 These APIs require prior approval so you will need to request access through the developer portal (https://usbinnovation.apiportal.akana.com) where you must first define an application and request access to the Location API. This will enable you to acquire a Bearer Token (which is needed for authorization).
